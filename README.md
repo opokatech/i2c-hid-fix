@@ -15,3 +15,6 @@ To build the module I needed `linux-headers-4.18.0-2-amd64` and `linux-kbuild-4.
 
 Then it just `make` and `make install` (which will just copy the .ko file to the `/lib/modules/...`
 
+Use target `reload` to uninstall current module and install a new one.
+
+
