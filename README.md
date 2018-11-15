@@ -13,8 +13,12 @@ In the original source file I replaced `dev_err` with `dev_err_once`. And I'm im
 
 To build the module I needed `linux-headers-4.18.0-2-amd64` and `linux-kbuild-4.18`.
 
-Then it just `make` and `make install` (which will just copy the .ko file to the `/lib/modules/...`
+Then it just
+```
+cd 4.18.0  # use the version of your kernel
+make
+make install # (which will just copy the .ko file to the `/lib/modules/...
+```
 
 Use target `reload` to uninstall current module and install a new one.
-
 
